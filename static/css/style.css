@@ -1,0 +1,90 @@
+ 
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado (header) y menú de navegación */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del contenido principal */
+.main {
+    padding: 20px;
+}
+
+.section {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del pie de página (footer) */
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact-info,  .social-media, .copyright {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-info h3,  .social-media h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .quick-links ul, .social-media a, .copyright p {
+    font-size: 14px;
+}
+
+.social-media a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff4500;
+}
+
+/* Estilos específicos para enlaces */
+.menu-link:hover {
+    color: #ff4500; /* Cambiar el color del enlace al pasar el mouse por encima */
+}

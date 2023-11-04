@@ -1,0 +1,30 @@
+ 
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.portfolio-image {
+    flex: 1;
+}
+
+.portfolio-image img {
+    max-width: 70%;
+    border-radius: 50%;
+}
+
+.portfolio-info {
+    flex: 2;
+}
+
+.portfolio-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    font-size: 16px;
+}

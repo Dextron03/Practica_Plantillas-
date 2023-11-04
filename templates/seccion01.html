@@ -1,1 +1,21 @@
- 
+{% extends "./layouts/base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static "./css/style_seccion01.css" %}"> 
+{% endblock head %}
+
+{% block titulo %}Informacion{% endblock titulo %}
+
+{% block contenido %}
+    <h1>Portafolio</h1>
+    <section class="portfolio">
+        <div class="portfolio-image">
+            <img src="{% static "./img/foto.jpg" %}" alt="Tu Foto de Perfil">
+        </div>
+        <div class="portfolio-info">
+            <h2>Mi Portafolio</h2>
+            <p>{{descrip}}</p>
+        </div>
+    </section>
+{% endblock contenido %}
