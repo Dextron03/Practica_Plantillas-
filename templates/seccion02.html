@@ -1,1 +1,21 @@
 {% extends "./layouts/base.html" %} 
+
+{% block contenido %}
+    
+
+    <div class="container text-justify">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            {% for project, desc in proyectos.items %}
+                <div class="card" style="width: 18rem;">
+                    <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{project}}</h5>
+                        <p class="card-text">{{desc}}</p>
+                        <a href="{{url}}" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+ 
+{% endblock contenido %}

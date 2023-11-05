@@ -17,5 +17,21 @@ def first_seccion(request):
     return render(request, 'seccion01.html', context) 
 
 def second_seccion(request):
-    context : dict = {}
+    actual_year = datetime.datetime.now().year
+    urls : list = ["https://github.com/Dextron03/TerminalCRUD", "https://github.com/Dextron03/Random_Password_Generator", "https://github.com/Dextron03/Reto_Lenguaje_Hacker"]
+
+    proyectos = { 
+        "TerminalCRUD":"Este proyecto se centra en la creación de una aplicación de línea de comandos en Python que proporciona una interfaz de usuario para interactuar con una base de datos SQLite. La aplicación está diseñada para llevar a cabo operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en una base de datos SQLite existente.",
+        "Random_Password_Generator":"Este es un programa de Python que te permite generar contraseñas aleatorias con opciones de configuración. Puedes determinar la longitud de la contraseña, incluir o excluir letras mayúsculas, números y símbolos.",
+        "Reto_Lenguaje_Hacker":"El programa solicita al usuario que ingrese un texto y luego realiza la conversión a lenguaje hacker utilizando una tabla de reemplazos específica. Puedes encontrar la tabla de reemplazos en el siguiente enlace: Tabla de Leet Speak.",
+    }
+    
+    context : dict = {
+        'proyectos':proyectos,
+        "urls":urls,
+        'year': actual_year,
+        'correo':'brailyrs03@gmail.com',
+        'numero':'(829) 5329522'   
+    }
+
     return render(request, 'seccion02.html', context)
